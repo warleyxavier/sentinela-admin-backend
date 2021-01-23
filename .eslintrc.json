@@ -1,0 +1,31 @@
+{
+  "env": {
+      "browser": true,
+      "es2020": true
+  },
+  "extends": "eslint:recommended",
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaVersion": 11,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "@typescript-eslint"
+  ],
+  "rules": {
+      "no-empty": "error",
+      "no-empty-function": "error",
+      "no-extra-boolean-cast": "error",
+      "no-magic-numbers": ["error", {"ignore": [200]}],
+      "no-multi-spaces": "error",
+      "no-redeclare": "error",
+      "no-undef": "off",
+      "no-unused-vars": "warn",
+      "complexity": ["error", 5],
+      "max-depth": ["error", 3],
+      "max-len": ["error", 150],
+      "max-lines": ["error", 400],
+      "max-lines-per-function": ["error", 50],
+      "max-params": ["error", 4]
+  }
+}

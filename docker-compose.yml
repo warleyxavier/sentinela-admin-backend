@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    container_name: javascript-boilerplate
+    image: javascript-boilerplate  
+    command: npm run start:dev
+    volumes:
+      - './:/app'
+    ports:
+      - "3000:3000"

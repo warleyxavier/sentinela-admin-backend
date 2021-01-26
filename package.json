@@ -1,7 +1,7 @@
 {
   "name": "typescript-typeorm-boilerplate",
   "version": "1.0.0",
-  "description": "A Javascript biolerplate including Typescript, Typeorm, Jest, ESLint and Docker",
+  "description": "Aplicação para armazenamento e gerenciamento de logs",
   "main": "server.ts",
   "scripts": {
     "lint": "eslint \"src/**/*.ts\"",

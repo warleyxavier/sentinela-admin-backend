@@ -3,8 +3,8 @@ version: "3"
 services:
   web:
     build: .
-    container_name: javascript-boilerplate
-    image: javascript-boilerplate  
+    container_name: sentinela
+    image: sentinela  
     command: npm run start:dev
     volumes:
       - './:/app'

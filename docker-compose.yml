@@ -10,3 +10,18 @@ services:
       - './:/app'
     ports:
       - "3000:3000"
+    depends_on: 
+      - banco-dados
+
+  banco-dados:
+    image: postgres
+    restart: always
+    environment: 
+      POSTGRES_PASSWORD: "123456"
+    ports:
+      - "5433:5432"
+    volumes:
+      - dados-banco:/var/lib/postgresql/data
+
+volumes: 
+  dados-banco:

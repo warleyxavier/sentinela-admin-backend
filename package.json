@@ -1,5 +1,5 @@
 {
-  "name": "typescript-typeorm-boilerplate",
+  "name": "sentinela-admin-back-end",
   "version": "1.0.0",
   "description": "Aplicação para armazenamento e gerenciamento de logs",
   "main": "server.ts",
@@ -9,7 +9,11 @@
     "start:prod": "node dist/server.js",
     "build": "tsc",
     "test": "jest --verbose",
-    "test:cov": "jest --coverage"
+    "test:cov": "jest --coverage",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config ormconfig.json",
+    "typeorm:run": "npm run typeorm migration:run",
+    "typeorm:revert": "npm run typeorm migration:revert",
+    "typeorm:show": "npm run typeorm migration:show"
   },
   "author": "Warley Xavier <warleyandradexavier@gmail.com>",
   "license": "ISC",

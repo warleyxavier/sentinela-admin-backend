@@ -5,6 +5,8 @@ import "reflect-metadata";
 import app from "./core/config/ServidorHTTP";
 import conectorBancoDados from "./core/config/ConfiguradorConexaoBancoDados";
 
+import "./core/config/InjectImports";
+
 async function bootstrap() {
     await conectorBancoDados();
     console.log("Conexão estabelecida com o banco de dados <3 ...")
